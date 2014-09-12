@@ -1,0 +1,67 @@
+<div id="header">
+  <h1>Hello, Chart Libraries World!</h1>
+</div>
+<div id="menu">
+  <fieldset style="margin: 20px 0 20px 0;">
+
+    <!-- Source -->
+    <div class="form-group">
+      <label for="source">Source</label>
+      <select class="form-control" id="source">
+        <option value="random">Random Data</option>
+      </select>
+    </div>
+
+    <!-- Params specific to RANDOM source -->
+    <div class="form-group random-params">
+      <input type="text" class="form-control" id="charts" placeholder="Number of Charts">
+    </div>
+    <div class="form-group random-params">
+      <input type="text" class="form-control"id="resolution" placeholder="Resolution (ms)">
+    </div>
+    <div class="checkbox random-params">
+      <label>
+        <input type="checkbox" id="history" disabled> Generate history
+      </label>
+    </div>
+    <div class="form-group random-params">
+      <input type="text" class="form-control" id="history-hours" placeholder="Number of Hours" disabled>
+    </div>
+
+    <!-- Chart Library -->
+    <div class="form-group">
+      <label for="library">Library</label>
+      <select class="form-control" id="library">
+        <option value="dygraphs">dygraphs</option>
+        <option value="chartjs">Chart.js</option>
+        <option value="rickshaw">Rickshaw</option>
+        <option value="highcharts">Highcharts</option>
+      </select>
+    </div>
+
+    <!-- Actions -->
+    <div class="form-group">
+      <button id="start" class="btn btn-success">
+        <span class="glyphicon glyphicon-play"></span>
+        Start
+      </button>
+      <button id="stop" class="btn btn-danger" disabled>
+        <span class="glyphicon glyphicon-stop"></span>
+        Stop
+      </button>
+      <button id="clear" class="btn btn-default" disabled>
+        <span class="glyphicon glyphicon-trash"></span>
+        Clear
+      </button>
+    </div>
+  </fieldset>
+</div>
+<div id="stats">
+  <h2>Stats</h2>
+  <ul>
+    <li><strong>Charts:</strong> <span id="totalCharts">0</span></li>
+    <li><strong>Metrics:</strong> <span id="totalMetrics">0</span></li>
+  </ul>
+  <hr>
+</div>
+<div id="dashboard" class="row"></div>
