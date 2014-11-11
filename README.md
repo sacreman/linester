@@ -1,7 +1,9 @@
 linester
 ========
 
-Draws lines on charts with different libraries
+Draws lines on charts with different libraries to help with performance bencharking.
+
+![linester](https://raw.githubusercontent.com/dataloop/linester/master/linester.png)
 
 Installation
 ============
