@@ -11,3 +11,5 @@ Installation
 2. ``npm install``
 
 3. ``node server.js``
+
+4. browse http://localhost:3000
